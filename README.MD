@@ -1,34 +1,62 @@
-# Quantum-Cosmology Integration Suite (QCIS)
 
-**First-principles quantum corrections to cosmological evolution**
+# Quantum-Corrected Cosmological Perturbation Solver
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPLv3 for non-commercial](https://img.shields.io/badge/License-GPLv3%20for%20non--commercial-green.svg)](LICENSE-GPL)
 [![arXiv](https://img.shields.io/badge/arXiv-2407.xxxxx-b31b1b.svg)](https://arxiv.org/abs/2407.xxxxx)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxxx)
+[![Build Status](https://github.com/tlcagford/quantum-cosmology/workflows/CI/badge.svg)](https://github.com/tlcagford/quantum-cosmology/actions)
 
-## 🚀 Overview
+## 🔬 Overview
 
-QCIS unifies quantum field theory simulations with cosmological evolution, providing **first-principles calculations** of quantum entanglement corrections to the Friedmann equations. This framework bridges the gap between fundamental quantum gravity and observational cosmology.
+A complete computational framework for cosmological perturbation theory with first-principles quantum corrections. This package implements:
 
-## ✨ Features
+- **Quantum-corrected Mukhanov-Sasaki equations** with backreaction from quantum fields
+- **Full Boltzmann integration** with quantum scattering terms
+- **Tensor perturbations** (gravitational waves) with quantum sources
+- **Integration with CLASS/CAMB** for validation
+- **Planck 2018 data validation** with Bayesian evidence computation
+- **Production-ready pipeline** for cosmological parameter constraints
 
-- **First-principles quantum corrections**: Compute Ω_ent(a) from QFT vacuum expectation values
-- **Unified solver**: Self-consistent iteration between QFT and cosmology
-- **Observable predictions**: CMB, BAO, SNIa, LSS with quantum corrections
-- **Bayesian inference**: Constrain quantum parameters with cosmological data
-- **Visualization tools**: Comprehensive plotting and comparison utilities
-- **Modular design**: Extensible for new quantum models and cosmological scenarios
+## 🚀 Features
+
+### Core Physics
+- **Quantum stress-energy perturbations** using Schwinger-Keldysh formalism
+- **Bunch-Davies & α-vacuum initial conditions** with quantum corrections
+- **Renormalization schemes**: adiabatic (4th order), point-splitting, dimensional
+- **Self-consistent backreaction** between metric and quantum fields
+- **Entanglement entropy** calculations for cosmological horizons
+
+### Numerical Methods
+- Adaptive Runge-Kutta integration for perturbation equations
+- Line-of-sight integration for CMB spectra
+- Sparse matrix methods for large k-mode computations
+- GPU acceleration support (via CuPy/Numba)
+- Parallel computation over k-modes
+
+### Data & Validation
+- **Planck 2018 likelihood integration**
+- **CMB power spectra** (TT, TE, EE, BB, ϕϕ) with quantum effects
+- **Matter power spectrum** with quantum corrections
+- **Bayesian evidence** calculation for model comparison
+- **Hubble tension** and **S₈ tension** analysis tools
 
 ## 📦 Installation
 
+### Prerequisites
+- Python 3.8 or higher
+- C/C++ compiler (for CLASS integration)
+- HDF5 library (for data storage)
+
+### Quick Install
 ```bash
 # Clone repository
-git clone https://github.com/tlcagford/Quantum-Cosmology-Integration-Suite.git
-cd Quantum-Cosmology-Integration-Suite
+git clone https://github.com/tlcagford/quantum-cosmology.git
+cd quantum-cosmology
 
 # Install with pip
 pip install -e .
 
-# Or with poetry (recommended)
-poetry install
+# Or with conda
+conda env create -f environment.yml
+conda activate quantum-cosmo
