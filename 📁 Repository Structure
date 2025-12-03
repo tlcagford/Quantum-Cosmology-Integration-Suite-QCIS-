@@ -1,0 +1,76 @@
+Quantum-Cosmology-Integration-Suite/
+├── README.md                          # Main documentation
+├── setup.py                           # Installation
+├── requirements.txt                   # Dependencies
+├── pyproject.toml                     # Modern Python config
+├── LICENSE                            # MIT/Apache 2.0
+│
+├── qcis/                              # Main package
+│   ├── __init__.py
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── unified_solver.py          # Main integration class
+│   │   ├── configuration.py           # Config management
+│   │   └── constants.py               # Physical constants
+│   │
+│   ├── qft_engine/                    # From SourceForge
+│   │   ├── __init__.py
+│   │   ├── simulator.py              # Quantum field simulator
+│   │   ├── entanglement_entropy.py   # Entanglement calculations
+│   │   ├── stress_energy_tensor.py   # RSET computations
+│   │   └── renormalization.py        # Renormalization schemes
+│   │
+│   ├── cosmology/                     # From GitHub ECC
+│   │   ├── __init__.py
+│   │   ├── friedmann_solver.py       # Modified Friedmann solver
+│   │   ├── perturbation_theory.py    # Linear perturbations
+│   │   ├── observables.py            # CMB, SNIa, BAO calculators
+│   │   └── data_fitting.py           # MCMC, Bayesian inference
+│   │
+│   ├── bridge/                        # Integration layer
+│   │   ├── __init__.py
+│   │   ├── qft_to_cosmology.py       # Ω_ent(a) calculation
+│   │   ├── consistency_checks.py      # Physical consistency
+│   │   └── interpolation.py          # Caching/interpolation
+│   │
+│   ├── interfaces/                    # User interfaces
+│   │   ├── __init__.py
+│   │   ├── command_line.py           # CLI interface
+│   │   ├── api.py                    # Python API
+│   │   └── web_api.py                # REST API (optional)
+│   │
+│   ├── visualization/
+│   │   ├── __init__.py
+│   │   ├── plotter.py                # Plotting utilities
+│   │   ├── dashboard.py              # Interactive dashboard
+│   │   └── comparison_tools.py       # Model comparisons
+│   │
+│   └── tests/
+│       ├── __init__.py
+│       ├── test_integration.py
+│       ├── test_physics.py
+│       └── test_performance.py
+│
+├── examples/                          # Jupyter notebooks
+│   ├── 01_quick_start.ipynb
+│   ├── 02_hubble_tension.ipynb
+│   ├── 03_cmb_analysis.ipynb
+│   ├── 04_parameter_constraints.ipynb
+│   └── 05_custom_models.ipynb
+│
+├── data/                              # Sample data/configs
+│   ├── default_parameters.yaml
+│   ├── planck2018/
+│   ├── pantheon_plus/
+│   └── lss_catalogs/
+│
+├── docs/                              # Documentation
+│   ├── theory_guide.md
+│   ├── api_reference.md
+│   ├── installation.md
+│   └── contributing.md
+│
+└── scripts/                           # Utility scripts
+    ├── run_pipeline.py
+    ├── batch_analysis.py
+    └── deploy_dashboard.py
