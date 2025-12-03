@@ -1,0 +1,26 @@
+# pyproject.toml (modern alternative to setup.py)
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qcis"
+version = "1.0.0"
+dependencies = [
+    "numpy>=1.21",
+    "scipy>=1.7",
+    "matplotlib>=3.5",
+    "h5py>=3.6",
+    "scikit-learn>=1.0",  # For ML acceleration
+    "emcee>=3.1",  # For MCMC
+    "corner>=2.2",  # For plotting posteriors
+]
+
+# Dockerfile
+FROM python:3.9-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+RUN pip install -e .
+CMD ["qcis", "--help"]
