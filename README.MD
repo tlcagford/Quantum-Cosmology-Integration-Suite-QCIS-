@@ -48,18 +48,6 @@ A complete computational framework for cosmological perturbation theory with fir
 - C/C++ compiler (for CLASS integration)
 - HDF5 library (for data storage)
 
-### Quick Install
-```bash
-# Clone repository
-git clone https://github.com/tlcagford/quantum-cosmology.git
-cd quantum-cosmology
-
-# Install with pip
-pip install -e .
-
-# Or with conda
-conda env create -f environment.yml
-conda activate quantum-cosmo
 📜 License
 Dual License Structure
 
@@ -102,3 +90,16 @@ Personal Projects	No	FREE
 Commercial Product	YES	Negotiable
 Corporate R&D	YES	Negotiable
 SaaS Integration	YES	Negotiable
+
+### Quick Install
+```bash
+# Clone repository
+git clone https://github.com/tlcagford/quantum-cosmology.git
+cd quantum-cosmology
+
+# Install with pip
+pip install -e .
+
+# Or with conda
+conda env create -f environment.yml
+conda activate quantum-cosmo
