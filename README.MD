@@ -1,9 +1,9 @@
 
 # Quantum-Corrected Cosmological Perturbation Solver
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: GPLv3 for non-commercial](https://img.shields.io/badge/License-GPLv3%20for%20non--commercial-green.svg)](LICENSE-GPL)
-[![arXiv](https://img.shields.io/badge/arXiv-2407.xxxxx-b31b1b.svg)](https://arxiv.org/abs/2407.xxxxx)
+[![License: Dual](https://img.shields.io/badge/License-Dual%20License-blue.svg)](LICENSE)
+[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
+[![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg)](https://arxiv.org/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxxx)
 [![Build Status](https://github.com/tlcagford/quantum-cosmology/workflows/CI/badge.svg)](https://github.com/tlcagford/quantum-cosmology/actions)
 
