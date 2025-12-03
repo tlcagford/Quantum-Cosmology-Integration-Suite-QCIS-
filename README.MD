@@ -60,3 +60,45 @@ pip install -e .
 # Or with conda
 conda env create -f environment.yml
 conda activate quantum-cosmo
+📜 License
+Dual License Structure
+
+This software is available under two distinct licenses:
+1. Academic/Non-Commercial License (FREE)
+
+    For: Academic researchers, students, non-profit organizations
+
+    Permissions:
+
+        Free use, modification, and distribution
+
+        Use in academic research and publications
+
+        Classroom and educational use
+
+    Requirements:
+
+        Cite the original work in publications
+
+        No commercial use allowed
+
+2. Personal Commercial License (REQUIRED)
+
+    For: Companies, commercial organizations, for-profit use
+
+    Requirements:
+
+        License required for any commercial use
+
+        Contact: Tony E. Ford - 📧 tlcagford@gmail.com
+
+        Commercial licensing terms negotiated individually
+
+Usage Rights Summary
+Use Case	License Required	Cost
+Academic Research	No	FREE
+University Teaching	No	FREE
+Personal Projects	No	FREE
+Commercial Product	YES	Negotiable
+Corporate R&D	YES	Negotiable
+SaaS Integration	YES	Negotiable
