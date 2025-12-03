@@ -1,0 +1,2 @@
+n_k × n_a × complex_double = 1000 × 1000 × 16 bytes ≈ 16 MB
+But we need time evolution too: × n_time_steps → 16 GB
