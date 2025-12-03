@@ -1,0 +1,3 @@
+solve_mode_equations(k_max, n_k=1000) → O(10³) ODEs
+for each k: solve ODE with n_steps=1000 → O(10⁶) operations
+for each a: repeat → O(10⁹) for full a-range
