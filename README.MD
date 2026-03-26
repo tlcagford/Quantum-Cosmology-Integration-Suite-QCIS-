@@ -1,150 +1,221 @@
+# Quantum Cosmology & Astrophysics Unified Suite (QCAUS)
 
-# Quantum-Corrected Cosmological Perturbation Solver
+A collection of four interconnected open‑source projects that explore the quantum nature of the universe – from the early cosmos to extreme astrophysical environments.
 
-[![License: Dual](https://img.shields.io/badge/License-Dual%20License-blue.svg)](LICENSE)
-[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
-[![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg)](https://arxiv.org/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxxx)
+- **QCI AstroEntangle Refiner** – FDM soliton physics & image processing  
+- **Magnetar QED Explorer** – Magnetar fields, dark photons & vacuum QED  
+- **Primordial Photon–DarkPhoton Entanglement** – Von Neumann evolution in an expanding universe  
+- **QCIS (Quantum Cosmology Integration Suite)** – Quantum‑corrected cosmological perturbations
 
+---
 
-## 🔬 Overview
+## 🔭 Overview
 
-A complete computational framework for cosmological perturbation theory with first-principles quantum corrections. This package implements:
+These four projects form a complete computational framework for **quantum‑inspired astrophysics**. Together they enable:
 
-- **Quantum-corrected Mukhanov-Sasaki equations** with backreaction from quantum fields
-- **Full Boltzmann integration** with quantum scattering terms
-- **Tensor perturbations** (gravitational waves) with quantum sources
-- **Integration with CLASS/CAMB** for validation
-- **Planck 2018 data validation** with Bayesian evidence computation
-- **Production-ready pipeline** for cosmological parameter constraints
+- **Image analysis** of galaxy clusters (Abell, Bullet, etc.) using Fuzzy Dark Matter (FDM) soliton overlays.
+- **Simulation of magnetar magnetospheres** with strong‑field QED, dark photon production, and Kerr geodesics.
+- **First‑principles modeling** of photon–dark photon entanglement in the expanding universe.
+- **Quantum‑corrected power spectra** and transfer functions for cosmological parameter inference.
 
-## 🚀 Features
+All tools are designed to be accessible, interactive, and fully open for academic research.
 
-### Core Physics
-- **Quantum stress-energy perturbations** using Schwinger-Keldysh formalism
-- **Bunch-Davies & α-vacuum initial conditions** with quantum corrections
-- **Renormalization schemes**: adiabatic (4th order), point-splitting, dimensional
-- **Self-consistent backreaction** between metric and quantum fields
-- **Entanglement entropy** calculations for cosmological horizons
+---
 
-### Numerical Methods
-- Adaptive Runge-Kutta integration for perturbation equations
-- Line-of-sight integration for CMB spectra
-- Sparse matrix methods for large k-mode computations
-- GPU acceleration support (via CuPy/Numba)
-- Parallel computation over k-modes
+## 📦 The Four Projects
 
-### Data & Validation
-- **Planck 2018 likelihood integration**
-- **CMB power spectra** (TT, TE, EE, BB, ϕϕ) with quantum effects
-- **Matter power spectrum** with quantum corrections
-- **Bayesian evidence** calculation for model comparison
-- **Hubble tension** and **S₈ tension** analysis tools
+### 1. [QCI AstroEntangle Refiner](https://github.com/tlcagford/QCI_AstroEntangle_Refiner)
+*FDM soliton physics & image processing*
 
+- Upload FITS or standard images of galaxy clusters.
+- Apply Photon‑Dark‑Photon (PDP) entanglement to produce overlays showing FDM soliton cores, dark photon wave patterns, and dark matter density.
+- Annotated side‑by‑side comparison with scale bar, north indicator, and physics formulas.
+- Export results as PNG and metadata JSON.
 
-This Quantum-Corrected Cosmological Perturbation Solver is a high-fidelity numerical framework that bridges the gap between Semi-Classical Gravity and Observational Cosmology. Unlike standard solvers (like CLASS or CAMB) which assume a purely classical background for perturbations, this suite treats the vacuum as a dynamical participant.
-Below is a detailed functional evaluation of the suite’s core components.
+### 2. [Magnetar QED Explorer](https://github.com/tlcagford/Magnetar-Quantum-Vacuum-Engineering-for-Extreme-Astrophysical-Environments-)
+*Magnetar fields, dark photons & vacuum QED*
 
-1. Background Evolution Engine (_compute_lcdm_background)
-The foundation of the suite is a modified Friedmann solver.
+- Interactive simulation of magnetar dipole fields, Euler‑Heisenberg vacuum polarisation, and dark photon conversion.
+- Visualise Kerr spacetime null geodesics.
+- Drag‑and‑drop image upload or preloaded examples (Bullet Cluster, Crab Nebula, etc.) to see PDP‑enhanced overlays.
+- All plots downloadable.
 
-    The "Quantum Hook": It doesn't just solve for, CDM, and Radiation; it injects a Quantum Energy Density ( ) derived from vacuum fluctuations.
-    Backreaction Logic: By including in the Hubble expansion rate, the suite accounts for how quantum fields alter the expansion history. This is the primary mechanism for addressing the Hubble Tension, as it allows for a modified Sound Horizon ( ) at the time of recombination.
+### 3. [Primordial Photon–DarkPhoton Entanglement](https://github.com/tlcagford/Primordial-Photon-DarkPhoton-Entanglement)
+*Von Neumann evolution in an expanding universe*
 
-2. Scalar Perturbation Module (solve_scalar_perturbations)
-This module evolves the seeds of large-scale structure ().
+- Solves the von Neumann equation \(i\partial_t\rho = [H_{\text{eff}},\rho]\) for a coupled photon‑dark photon system.
+- Computes entanglement entropy evolution and mixing probabilities.
+- Provides full theoretical framework and numerical validation scripts.
 
-    Newtonian Gauge Dynamics: It solves the coupled Einstein-Boltzmann equations in the Conformal Newtonian Gauge.
-    Quantum Source Terms: It implements. Specifically, it calculates how quantum stress-energy perturbations provide an additional source or damping for the gravitational potential.
-    Anisotropic Stress: Unlike standard GR where in the absence of massive neutrinos, this solver allows due to quantum field anisotropic stress—a key signature for testing Modified Gravity.
+### 4. [QCIS – Quantum Cosmology Integration Suite](https://github.com/tlcagford/Quantum-Cosmology-Integration-Suite-QCIS-)
+*Quantum‑corrected cosmological perturbations*
 
-3. Tensor Perturbation Solver (solve_tensor_perturbations)
-This handles the "Primordial Gravitational Wave" (PGW) sector.
+- Implements quantum‑corrected Mukhanov‑Sasaki equations.
+- Calculates matter and tensor power spectra with backreaction from quantum fields.
+- Validates against Planck 2018 data and provides Bayesian evidence tools.
 
-    Dynamical Sourcing: It evolves the wave equation. In standard models,. Here, the Quantum Anisotropic Stress () acts as an active source.
-    Observational Output: It generates the tensor power spectrum, allowing the user to predict the Tensor-to-Scalar ratio (). This is crucial for verifying if the quantum corrections produce
-    -modes detectable by BICEP/Keck.
+---
 
-4. Quantum-Boltzmann Hierarchy (QuantumBoltzmannSolver)
-The most computationally intensive part of the suite, bridging perturbations to the CMB.
+## 🚀 Features at a Glance
 
-    Line-of-Sight Integration: It solves the Boltzmann hierarchy for photons, neutrinos, and baryons.
-    Quantum Scattering: It modifies the standard Compton scattering rate with quantum-corrected cross-sections. This affects the "thickness" of the Last Scattering Surface, directly impacting the damping tail of the CMB power spectrum. Polarization (E and B modes): It tracks the polarization generated by quadrupole anisotropies, providing the "smoking gun" for quantum effects in the early universe.
+| Project | Key Physics | Interactive | Input | Output |
+|---------|-------------|-------------|-------|--------|
+| **QCI AstroEntangle Refiner** | FDM soliton, PDP mixing | ✅ sliders | FITS / images | Annotated PNG, metadata |
+| **Magnetar QED Explorer** | Dipole field, dark photon conversion, Kerr | ✅ sliders, preloads | FITS / images | Plots, PNG exports |
+| **Primordial Entanglement** | von Neumann evolution, mixing | ✅ (via notebooks) | parameters | Evolution plots, matrices |
+| **QCIS** | Quantum‑corrected power spectra | ✅ (via scripts) | cosmological parameters | Power spectra, transfer functions |
 
-5. Statistical & Power Spectrum Suite (_compute_scalar_power_spectrum)
-This translates raw mode evolution into the statistical language of cosmology.
+---
 
-    Transfer Functions: It computes, showing how quantum pressure suppresses or enhances growth at different scales.
-    Cosmological Metrics:
-        (Spectral Index): Checks if the model remains consistent with the nearly scale-invariant Planck data.
-        (Clustering): Directly addresses the Tension by calculating matter clustering at 
-Sigma-8 Windowing: Uses a Top-hat window function to normalize the matter power spectrum, allowing for direct comparison with Weak Lensing surveys (DES, KiDS).
+## 📥 Installation
 
-🛠 Functional Strengths & Research Value
-Strength	Impact
-First-Principles Corrected	Moves beyond "curve-fitting" to provide a physical QFT basis for cosmological tensions.
-Multi-Messenger	Links CMB (Photons), LSS (Matter), and GWs (Tensors) into a single consistent framework.
-Validation-Ready	Designed to export data to HDF5, making it compatible with the standard Monte Carlo chains used in the field.
+Each project can be installed separately, but they share a common set of dependencies.  
+To use the interactive apps, install the required packages and launch Streamlit:
 
-## 📦 Installation
-
-### Prerequisites
-- Python 3.8 or higher
-- C/C++ compiler (for CLASS integration)
-- HDF5 library (for data storage)
-
-📜 License
-Dual License Structure
-
-This software is available under two distinct licenses:
-1. Academic/Non-Commercial License (FREE)
-
-    For: Academic researchers, students, non-profit organizations
-
-    Permissions:
-
-        Free use, modification, and distribution
-
-        Use in academic research and publications
-
-        Classroom and educational use
-
-    Requirements:
-
-        Cite the original work in publications
-
-        No commercial use allowed
-
-2. Personal Commercial License (REQUIRED)
-
-    For: Companies, commercial organizations, for-profit use
-
-    Requirements:
-
-        License required for any commercial use
-
-        Contact: Tony E. Ford - 📧 tlcagford@gmail.com
-
-        Commercial licensing terms negotiated individually
-
-Usage Rights Summary
-Use Case	License Required	Cost
-Academic Research	No	FREE
-University Teaching	No	FREE
-Personal Projects	No	FREE
-Commercial Product	YES	Negotiable
-Corporate R&D	YES	Negotiable
-SaaS Integration	YES	Negotiable
-
-### Quick Install
 ```bash
-# Clone repository
-git clone https://github.com/tlcagford/quantum-cosmology.git
-cd quantum-cosmology
+# Clone the desired repository
+git clone https://github.com/tlcagford/QCI_AstroEntangle_Refiner.git
+cd QCI_AstroEntangle_Refiner
 
-# Install with pip
-pip install -e .
+# Install dependencies (common for all apps)
+pip install -r requirements.txt
 
-# Or with conda
-conda env create -f environment.yml
-conda activate quantum-cosmo
+# Run the Streamlit app
+streamlit run app.py
+```
+
+The `requirements.txt` for each app typically includes:
+
+```
+streamlit>=1.28.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+scipy>=1.10.0
+astropy>=5.3.0
+scikit-image>=0.21.0
+Pillow>=10.0.0
+pandas>=2.0.0
+```
+
+For the **Primordial Entanglement** and **QCIS** libraries, you may need to run their Jupyter notebooks or Python scripts directly (no Streamlit UI).
+
+---
+
+## 📚 Physics References
+
+Each project is grounded in rigorous theoretical frameworks:
+
+- **FDM Soliton** – derived from the Schrödinger–Poisson system:
+  \[
+  \rho(r) \propto \left[\frac{\sin(kr)}{kr}\right]^2
+  \]
+- **Dark Photon Conversion** – kinetic mixing Lagrangian:
+  \[
+  \mathcal{L}_{\text{mix}} = \frac{\varepsilon}{2} F_{\mu\nu} F'^{\mu\nu}
+  \]
+- **Von Neumann Evolution** – density matrix evolution in an expanding universe:
+  \[
+  i\partial_t\rho = [H_{\text{eff}},\rho]
+  \]
+- **Quantum‑Corrected Power Spectrum**:
+  \[
+  P(k) = P_{\Lambda\text{CDM}}(k) \times \left(1 + f_{\text{NL}}\left(\frac{k}{k_0}\right)^{n_q}\right)
+  \]
+
+Full derivations and references are provided in the individual repositories.
+
+---
+
+## 🧪 Quick Start Examples
+
+### QCI AstroEntangle Refiner
+1. Launch the app: `streamlit run app.py`
+2. Select a preloaded example (Bullet Cluster, Abell 1689, …) or upload your own FITS/image.
+3. Adjust Ω (entanglement strength) and fringe scale.
+4. Download the annotated comparison and individual physics components.
+
+### Magnetar QED Explorer
+1. Launch the app.
+2. Use the preloaded examples or drag‑and‑drop an image.
+3. Explore the three magnetar physics tabs (Magnetic Field, Dark Photons, Kerr Spacetime).
+4. Export plots and processed images.
+
+### Primordial Entanglement (theoretical)
+```python
+from primordial_entanglement import solve_von_neumann
+mixing, entropy, t = solve_von_neumann(omega=0.7, m_dark=1e-9)
+```
+
+### QCIS (cosmological spectra)
+```python
+from qcis import qcis_power_spectrum
+k, P_quantum = qcis_power_spectrum(omega_m=0.3, omega_b=0.05, h=0.7, f_nl=1.0)
+```
+
+---
+
+## 📄 Citation
+
+If you use any of these projects in your research, please cite the respective repository and the author’s work:
+
+```bibtex
+@software{Ford2025QCI,
+  author = {Ford, Tony E.},
+  title = {QCI AstroEntangle Refiner},
+  year = {2025},
+  url = {https://github.com/tlcagford/QCI_AstroEntangle_Refiner}
+}
+
+@software{Ford2025Magnetar,
+  author = {Ford, Tony E.},
+  title = {Magnetar QED Explorer},
+  year = {2025},
+  url = {https://github.com/tlcagford/Magnetar-Quantum-Vacuum-Engineering-for-Extreme-Astrophysical-Environments-}
+}
+
+@software{Ford2025Primordial,
+  author = {Ford, Tony E.},
+  title = {Primordial Photon–DarkPhoton Entanglement},
+  year = {2025},
+  url = {https://github.com/tlcagford/Primordial-Photon-DarkPhoton-Entanglement}
+}
+
+@software{Ford2025QCIS,
+  author = {Ford, Tony E.},
+  title = {QCIS – Quantum Cosmology Integration Suite},
+  year = {2025},
+  url = {https://github.com/tlcagford/Quantum-Cosmology-Integration-Suite-QCIS-}
+}
+```
+
+---
+
+## 📜 License
+
+All four projects are released under a **Dual License**:
+
+- **Academic / Non‑Commercial Use:** Free for research, education, and personal projects.
+- **Commercial Use:** Requires a separate license. Please contact the author for details.
+
+See the `LICENSE` file in each repository for full terms.
+
+---
+
+## 📧 Contact
+
+**Tony E. Ford**  
+Independent Researcher / Astrophysics & Quantum Systems  
+Email: tlcagford@gmail.com  
+GitHub: [@tlcagford](https://github.com/tlcagford)
+
+---
+
+## 🙏 Acknowledgments
+
+- NASA/ESA Hubble Space Telescope & JWST for public FITS data.
+- The FDM, QED, and cosmology communities for foundational research.
+- Streamlit, NumPy, SciPy, Matplotlib, and all other open‑source libraries that made these tools possible.
+
+---
+
+*“Exploring the quantum nature of the universe – from the first moments to the most extreme objects.”*
